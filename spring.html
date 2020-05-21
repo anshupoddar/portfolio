@@ -1,0 +1,142 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<style>
+
+
+  
+ 
+  
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.contain {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+</style>
+<body>
+<div class="contain">
+
+	<h1 class="heading"><b><i> My Hobbies<hr></hr>  <span> Hobbies help you grow and Brings out the best in you!.These are my hobbies and they bring out my creative side!!</span></h1></b></i>
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://www.iamexpat.de/sites/default/files/styles/article--full/public/gardening-hobby.jpg?itok=tCJ4QGNj" alt="person ">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://t1.daumcdn.net/cfile/tistory/225F323556A6F9C318" alt="sunset ">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://img.etimg.com/thumb/msid-66129697,width-640,resizemode-4,imgsize-342241/how-to-get-your-trips-sponsored.jpg" alt="people ">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://secretnyc.co/wp-content/uploads/2020/04/nikon.jpg" alt="car ">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images-na.ssl-images-amazon.com/images/I/7112JXpMCYL._SL1500_.jpg" alt="back ">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://www.learntpoint.com/wp-content/uploads/2019/12/2022460_8546.jpg" alt="man ">
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

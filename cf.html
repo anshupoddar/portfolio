@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="./style.css">
+</head>
+<style>
+
+
+
+body{
+  padding: 30px 250px;
+  background-color:blue;
+}
+
+.contact{
+ 
+  width: 60vw;
+  background-color: gold;
+  border-radius:20px;
+
+}
+.contact h1{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contact_form{
+  max-width: 400px;
+  margin: auto;
+ padding: 1px;
+  overflow: hidden;
+}
+
+.contact_form_text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 14px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #fff;
+  transition: 0.2s;
+  }
+textarea.contact_form_text{
+  resize: none;
+  height: 100px;
+}
+.contact_form_btn{
+  border:4;
+  padding: 14px 50px;
+background-color: #000;
+color: #fff;
+cursor: pointer;
+border-radius:10px;
+font-size:12px;
+}
+
+
+
+
+</style>
+  <body>
+  
+
+<div class="contact">
+  <h1> My  Contact  Information </h1><hr></hr>
+  <h2><u>Email:anshupoddar4@gmail.com</u></h2>
+   <h3><em>Phone:9235786971</em><h3>
+    <br><br>
+<h2><em>ANY QUESTIONS ?? PUT THEM HERE </em></h2>
+  <form class="contact_form" action="https://www.google.com/" method="post">
+      <input type="text" class="contact_form_text" placeholder="Your name">
+      <input type="email" class="contact_form_text" placeholder="Your email">
+      <textarea class="contact_form_text" placeholder="Your message"></textarea>
+      <input type="submit" class="contact_form_btn" value="Send">
+    </form>
+</div>
+
+  </body>
+  </html>
+
